@@ -1,23 +1,25 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   
 
-<!--    Datatables  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.0/material.min.css">
-   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.material.min.css">
+
+    <!--    Datatables  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.0/material.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.material.min.css">
 
     <title></title>
-  </head>
-  <body>
+</head>
+
+<body>
     <h3>Datatables</h3>
-      
+
     <h4>Ejemplo Datatables estilo Material Design</h4>
-    
+
     <table id="example" class="mdl-data-table" style="width:100%">
         <thead>
             <tr>
@@ -498,30 +500,30 @@
             </tr>
         </tfoot>
     </table>
-         
-    
+
+
 
     <!-- Optional JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-      
-      
-<!--    Datatables-->
-<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.20/js/dataTables.material.min.js"></script>
+
+
+    <!--    Datatables-->
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.material.min.js"></script>
 
     <script>
-    $(document).ready(function() {
-    $('#example').DataTable( {
-        columnDefs: [
-            {
-                targets: [ 0, 1, 2 ],
-                className: 'mdl-data-table__cell--non-numeric'
-            }
-        ]
-    } );
-} );
-    </script></script>>
-      
-      
-  </body>
+        $(document).ready(function() {
+            $('#example').DataTable({
+                columnDefs: [{
+                    targets: [0, 1, 2],
+                    className: 'mdl-data-table__cell--non-numeric'
+                }]
+            });
+        });
+    </script>
+    </script>>
+
+
+</body>
+
 </html>

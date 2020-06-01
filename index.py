@@ -1,6 +1,5 @@
 from flask import Flask , render_template	,request,url_for,redirect,flash
 from flask_mysqldb import MySQL  
-
 app=Flask(__name__)
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
@@ -18,6 +17,9 @@ def home():
 	print(data)
 	mysql.connection.commit()
 	return render_template('home.html',contactos=data)
+
+
+
 
 
 @app.route('/add_contact',methods=['POST'])
