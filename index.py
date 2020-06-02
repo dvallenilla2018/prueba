@@ -1,10 +1,10 @@
 from flask import Flask , render_template	,request,url_for,redirect,flash
 from flask_mysqldb import MySQL  
 app=Flask(__name__)
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
-app.config['MYSQL_DB'] = 'flaskcontacts'
+app.config['MYSQL_HOST'] = 'locaus-cdbr-east-05.cleardb.net'
+app.config['MYSQL_USER'] = 'bd5d239587a483'
+app.config['MYSQL_PASSWORD'] = '8379a9b5'
+app.config['MYSQL_DB'] = 'heroku_ccf4416d7712962'
 mysql=MySQL(app)
 
 app.secret_key='mysecretkey'
